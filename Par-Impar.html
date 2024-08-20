@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par e Impar</title>
+</head>
+<body>
+    <h2>Par ou Impar</h2>
+    <input type="number" placeholder="N Escolhido (1 - 20)">
+    <select>
+        <option>Par</option>
+        <option>Impar</option>
+    </select>
+    
+    <button>Jogar</button>
+   
+    <p></p>
+
+    <script>
+        function jogar () {
+            const escolaJogador = document.querySelector('select').selectedIndex;
+            const escolaNumeroJogador = document.querySelector('input').value;
+        }
+        function randomNumber(min, max) {
+            return (Math.random() * (max - min).toFixed ());
+        }
+    </script>
+</body>
+</html>
